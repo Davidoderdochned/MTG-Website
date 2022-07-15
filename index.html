@@ -26,6 +26,11 @@
       </ion-header>
       <ion-content fullscreen>
         <ion-list>
+          <ion-item id="Plains" *ngFor="let item of items">
+            <ion-thumbnail slot="start">
+              <ion-img [src]="/Users/jonasstampfli/Documents/GitHub/MTG-Website/plains.jpeg"></ion-img>
+            </ion-thumbnail>
+          </ion-item>
           <ion-item id="Plains">a</ion-item>
           <ion-item id="Island">b</ion-item>
           <ion-item id="Swamp">c</ion-item>
