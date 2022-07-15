@@ -26,11 +26,11 @@
       </ion-header>
       <ion-content fullscreen>
         <ion-list>
-          <ion-item>Plains</ion-item>
-          <ion-item>Island</ion-item>
-          <ion-item>Swamp</ion-item>
-          <ion-item>Mountain</ion-item>
-          <ion-item>Forest</ion-item>
+          <ion-item id="Plains">a</ion-item>
+          <ion-item id="Island">b</ion-item>
+          <ion-item id="Swamp">c</ion-item>
+          <ion-item id="Mountain">d</ion-item>
+          <ion-item id="Forest">e</ion-item>
         </ion-list>
       </ion-content>
     </ion-app>
@@ -45,7 +45,7 @@
         const query = event.target.value.toLowerCase();
         requestAnimationFrame(() => {
           items.forEach((item) => {
-            const shouldShow = item.textContent.toLowerCase().indexOf(query) > -1;
+            const shouldShow = item.id.toLowerCase().indexOf(query) > -1;
             item.style.display = shouldShow ? 'block' : 'none';
           });
         });
