@@ -25,24 +25,35 @@
         </ion-toolbar>
       </ion-header>
       <ion-content fullscreen>
-        <ion-list>
-          <ion-item id="Plains" *ngFor="let item of items">
-            <ion-thumbnail slot="start">
-              <ion-img [src]="/Users/jonasstampfli/Documents/GitHub/MTG-Website/plains.jpeg"></ion-img>
-            </ion-thumbnail>
-          </ion-item>
-          <ion-item id="Plains">a</ion-item>
-          <ion-item id="Island">b</ion-item>
-          <ion-item id="Swamp">c</ion-item>
-          <ion-item id="Mountain">d</ion-item>
-          <ion-item id="Forest">e</ion-item>
-        </ion-list>
+        <ul>
+        
+          <li id="Plains">
+            <img src="/Users/jonasstampfli/Documents/GitHub/MTG-Website/plains.jpeg">
+          </li>
+        
+          <li id="Island">
+          <img src="/Users/jonasstampfli/Documents/GitHub/MTG-Website/island.jpeg">
+          </li>
+        
+          <li id="Swamp">
+            <img src="/Users/jonasstampfli/Documents/GitHub/MTG-Website/swamp.jpeg">
+          </li>
+        
+          <li id="Mountain">
+            <img src="/Users/jonasstampfli/Documents/GitHub/MTG-Website/mountain.jpeg">
+          </li>
+        
+          <li id="Forest">
+            <img src="/Users/jonasstampfli/Documents/GitHub/MTG-Website/forest.jpeg">
+          </li>
+        
+        </ul>
       </ion-content>
     </ion-app>
 
     <script>
       const searchbar = document.querySelector('ion-searchbar');
-      const items = Array.from(document.querySelector('ion-list').children);
+      const items = Array.from(document.querySelector('ul').children);
 
       searchbar.addEventListener('ionInput', handleInput);
 
