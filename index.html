@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Searchbar</title>
+    <title>Korvendor</title>
     <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
     <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
@@ -12,13 +12,27 @@
         --ion-safe-area-top: 20px;
         --ion-safe-area-bottom: 22px;
       }
+
+      .title {
+        width: 100%;
+        max-width: 800px;
+        height: auto;
+      }
+
+      .card {
+        width: 100%;
+        max-width: 800px;
+        height: auto;
+      }
     </style>
   </head>
   <body>
     <ion-app>
       <ion-header translucent>
         <ion-toolbar>
-          <ion-title>Searchbar</ion-title>
+          <ion-title>
+              <img src="korvendor.png" class="title">
+          </ion-title>
         </ion-toolbar>
         <ion-toolbar>
           <ion-searchbar></ion-searchbar>
@@ -26,28 +40,29 @@
       </ion-header>
       <ion-content fullscreen>
         <ul style="list-style-type:none;">
+          <br><br>
         
-          <li id="Plains">
+          <li id="Plains" class="card">
             <img src="plains.png">
             <br></br>
           </li>
 
-          <li id="Island">
+          <li id="Island" class="card">
             <img src="island.png">
             <br></br>
           </li>
      
-          <li id="Swamp">
+          <li id="Swamp" class="card">
             <img src="swamp.png">
             <br></br>
           </li>
         
-          <li id="Mountain">
+          <li id="Mountain" class="card">
             <img src="mountain.png">
             <br></br>
           </li>
         
-          <li id="Forest">
+          <li id="Forest" class="card">
             <img src="forest.png">
             <br></br>
           </li>
