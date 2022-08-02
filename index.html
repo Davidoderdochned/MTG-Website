@@ -42,8 +42,8 @@
         <ul style="list-style-type:none;">
           <br><br>
         
-          <li id="Plains" class="card">
-            <img src="plains.png">
+          <li id="Forest" class="card">
+            <img src="forest.png">
             <br></br>
           </li>
 
@@ -52,18 +52,23 @@
             <br></br>
           </li>
      
-          <li id="Swamp" class="card">
-            <img src="swamp.png">
-            <br></br>
-          </li>
-        
           <li id="Mountain" class="card">
             <img src="mountain.png">
             <br></br>
           </li>
         
-          <li id="Forest" class="card">
-            <img src="forest.png">
+          <li id="Plains" class="card">
+            <img src="plains.png">
+            <br></br>
+          </li>
+        
+          <li id="Swamp" class="card">
+            <img src="swamp.png">
+            <br></br>
+          </li>
+
+          <li id="Terror of the Peaks" class="card">
+            <img src="terror-of-the-peaks.png">
             <br></br>
           </li>
         
@@ -72,6 +77,13 @@
     </ion-app>
 
     <script>
+
+      alert('Disclaimer\nAll information given on cards on this website beyond their picture was created by one person alone. This makes it not a reliable source regarding various subjective aspects of a card. In addition to that, cards are looked at from a "commander" point of view here. If it is said on here that a card is "good", that means in the commander format, whilst still being my personal opinion and by no means absolute.\n\nAll the cards shown on this website are property of Wizards of the Coast.')
+
+      function message() {
+        alert("hello");
+      }
+
       const searchbar = document.querySelector('ion-searchbar');
       const items = Array.from(document.querySelector('ul').children);
 
